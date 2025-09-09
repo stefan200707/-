@@ -3,13 +3,13 @@ using namespace std;
 void InsertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
-        int j = i - 1; // j = i- 1
-        while (j >= 0 and arr[j] > key) {
-            arr[j + 1] = arr[j];
+        int j = i - 1;
+        while (j >= 0 and arr[j] > key) { //j >= 0 - у нас всё ещё есть элемент arr[j] > key - сравниваем все элементы до текущего 
+            arr[j + 1] = arr[j]; // если условия выполнились 
             j--;
-        }
-        arr[j + 1] = key;
-    }
+        } // в этом цикле происходит обмен наибольшего элемента и key
+        arr[j + 1] = key; // всё завязано на key
+    }   
 }
 int main()
 {
