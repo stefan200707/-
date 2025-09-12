@@ -10,5 +10,6 @@ int main() {
     string s;
     getline(cin,s);
     cout << s << endl;
+    cout << 9 << endl;
     return 0;
 }
